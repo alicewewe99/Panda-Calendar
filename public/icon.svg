@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8f0" />
+      <stop offset="50%" stop-color="#fef0ea" />
+      <stop offset="100%" stop-color="#fbe4dd" />
+    </linearGradient>
+    <radialGradient id="cardGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#fbd6ce" stop-opacity="0.2" />
+    </radialGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#8c4b57" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Background Base with fairytale scalloped border -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad)" />
+  <rect x="16" y="16" width="480" height="480" rx="98" fill="none" stroke="#eec8be" stroke-width="4" stroke-dasharray="8,6" />
+
+  <!-- Background Alice Storybook accents: Playing Cards & Pocket Watch & Tea -->
+  <g opacity="0.4">
+    <!-- Mini Spade -->
+    <path d="M 90 100 C 70 85, 55 110, 75 130 C 85 140, 90 148, 90 148 C 90 148, 95 140, 105 130 C 125 110, 110 85, 90 100 Z M 90 144 L 84 156 L 96 156 Z" fill="#2d3748" />
+    <!-- Mini Heart -->
+    <path d="M 420 110 C 400 90, 380 115, 410 135 L 420 145 L 430 135 C 460 115, 440 90, 420 110 Z" fill="#e53e3e" />
+    <!-- Mini Diamond -->
+    <polygon points="100,410 115,430 100,450 85,430" fill="#dd6b20" />
+    <!-- Mini Club -->
+    <circle cx="420" cy="405" r="10" fill="#2d3748"/>
+    <circle cx="410" cy="418" r="10" fill="#2d3748"/>
+    <circle cx="430" cy="418" r="10" fill="#2d3748"/>
+    <rect x="417" y="422" width="6" height="14" fill="#2d3748"/>
+  </g>
+
+  <!-- Giant Golden Pocket Watch Halo behind Panda -->
+  <circle cx="256" cy="270" r="175" fill="url(#cardGlow)" filter="url(#softShadow)" />
+  <circle cx="256" cy="270" r="165" fill="#ffffff" stroke="#e2a095" stroke-width="5" />
+  <!-- Clock marks -->
+  <g stroke="#d48a7f" stroke-width="3" stroke-linecap="round">
+    <line x1="256" y1="115" x2="256" y2="125" />
+    <line x1="256" y1="415" x2="256" y2="425" />
+    <line x1="101" y1="270" x2="111" y2="270" />
+    <line x1="401" y1="270" x2="411" y2="270" />
+  </g>
+
+  <!-- PANDA EARS (Black with Alice Bow & White Rabbit Ears) -->
+  <ellipse cx="165" cy="165" rx="42" ry="42" fill="#2c2830" />
+  <ellipse cx="347" cy="165" rx="42" ry="42" fill="#2c2830" />
+  <ellipse cx="165" cy="165" rx="20" ry="20" fill="#4a4252" opacity="0.6" />
+  <ellipse cx="347" cy="165" rx="20" ry="20" fill="#4a4252" opacity="0.6" />
+
+  <!-- Alice in Wonderland Big Ribbon on Panda's head -->
+  <path d="M 256 125 C 220 90, 190 120, 240 140 C 250 144, 256 148, 256 148 C 256 148, 262 144, 272 140 C 322 120, 292 90, 256 125 Z" fill="#25242c" />
+  <circle cx="256" cy="142" r="10" fill="#ffd166" />
+  <!-- White rabbit ear headband peek -->
+  <path d="M 230 135 C 225 75, 242 60, 247 125 Z" fill="#ffffff" stroke="#e8b4b8" stroke-width="3" />
+  <path d="M 233 130 C 230 85, 239 75, 243 125 Z" fill="#fecdd3" />
+  <path d="M 282 135 C 287 75, 270 60, 265 125 Z" fill="#ffffff" stroke="#e8b4b8" stroke-width="3" />
+  <path d="M 279 130 C 282 85, 273 75, 269 125 Z" fill="#fecdd3" />
+
+  <!-- PANDA HEAD -->
+  <ellipse cx="256" cy="245" rx="102" ry="92" fill="#ffffff" stroke="#eec8be" stroke-width="3" />
+
+  <!-- PANDA EYE PATCHES (Distinctive tilted panda black patches) -->
+  <!-- Left Eye Patch -->
+  <ellipse cx="215" cy="235" rx="26" ry="32" transform="rotate(-15, 215, 235)" fill="#2c2830" />
+  <!-- Left Eye White & Shiny Pupil -->
+  <circle cx="218" cy="234" r="10" fill="#ffffff" />
+  <circle cx="220" cy="232" r="4" fill="#1e1a22" />
+  <circle cx="222" cy="230" r="2" fill="#ffffff" />
+
+  <!-- Right Eye Patch -->
+  <ellipse cx="297" cy="235" rx="26" ry="32" transform="rotate(15, 297, 235)" fill="#2c2830" />
+  <!-- Right Eye White & Shiny Pupil -->
+  <circle cx="294" cy="234" r="10" fill="#ffffff" />
+  <circle cx="292" cy="232" r="4" fill="#1e1a22" />
+  <circle cx="294" cy="230" r="2" fill="#ffffff" />
+
+  <!-- Rosy Cheeks -->
+  <ellipse cx="188" cy="270" rx="16" ry="10" fill="#fda4af" opacity="0.6" />
+  <ellipse cx="324" cy="270" rx="16" ry="10" fill="#fda4af" opacity="0.6" />
+
+  <!-- Panda Cute Nose & Smiling Mouth -->
+  <ellipse cx="256" cy="256" rx="11" ry="8" fill="#2c2830" />
+  <path d="M 256 264 L 256 274 M 256 274 Q 248 284 242 276 M 256 274 Q 264 284 270 276" stroke="#2c2830" stroke-width="3" stroke-linecap="round" fill="none" />
+
+  <!-- ALICE BLUE DRESS & WHITE APRON WITH RUFFLES -->
+  <path d="M 175 330 Q 256 315 337 330 L 375 460 Q 256 475 137 460 Z" fill="#60a5fa" />
+  <!-- White Pinafore Apron -->
+  <path d="M 200 330 Q 256 324 312 330 L 332 460 Q 256 468 180 460 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+  <!-- Apron Heart Emblem -->
+  <path d="M 256 348 C 250 340, 238 344, 244 354 L 256 364 L 268 354 C 274 344, 262 340, 256 348 Z" fill="#f43f5e" />
+
+  <!-- PANDA BLACK ARMS HOLDING CALENDAR BOOK -->
+  <!-- Left arm -->
+  <ellipse cx="170" cy="380" rx="28" ry="42" transform="rotate(30, 170, 380)" fill="#2c2830" />
+  <!-- Right arm -->
+  <ellipse cx="342" cy="380" rx="28" ry="42" transform="rotate(-30, 342, 380)" fill="#2c2830" />
+
+  <!-- CALENDAR BOOK HELD IN PAWS -->
+  <g transform="translate(186, 360)">
+    <!-- Calendar Body -->
+    <rect x="0" y="0" width="140" height="110" rx="14" fill="#ffffff" stroke="#d97706" stroke-width="3" filter="url(#softShadow)" />
+    <!-- Calendar Header (Pink/Coral) -->
+    <path d="M 0 14 Q 0 0 14 0 L 126 0 Q 140 0 140 14 L 140 32 L 0 32 Z" fill="#f43f5e" />
+    <!-- Calendar Rings -->
+    <circle cx="28" cy="8" r="4" fill="#475569" />
+    <circle cx="70" cy="8" r="4" fill="#475569" />
+    <circle cx="112" cy="8" r="4" fill="#475569" />
+    <!-- Header Text: 2026 -->
+    <text x="70" y="24" font-family="'Courier New', monospace, sans-serif" font-weight="900" font-size="16" fill="#ffffff" text-anchor="middle" letter-spacing="2">2026</text>
+    <!-- Calendar Grid Mini Mockup -->
+    <!-- Large Number: Today! -->
+    <text x="70" y="72" font-family="sans-serif" font-weight="bold" font-size="34" fill="#e11d48" text-anchor="middle">★</text>
+    <text x="70" y="96" font-family="sans-serif" font-weight="bold" font-size="12" fill="#64748b" text-anchor="middle">月 曆</text>
+  </g>
+
+  <!-- Paws holding calendar -->
+  <ellipse cx="192" cy="415" rx="16" ry="14" fill="#2c2830" stroke="#3d3744" stroke-width="2" />
+  <ellipse cx="320" cy="415" rx="16" ry="14" fill="#2c2830" stroke="#3d3744" stroke-width="2" />
+
+  <!-- Alice Wonderland Sparkles & Magic Tea Pot Accent -->
+  <g fill="#f59e0b">
+    <path d="M 120 220 Q 125 210 135 215 Q 125 220 120 230 Q 115 220 105 215 Q 115 210 120 220 Z" />
+    <path d="M 390 225 Q 394 216 402 220 Q 394 224 390 232 Q 386 224 378 220 Q 386 216 390 225 Z" />
+    <path d="M 256 480 Q 259 473 265 476 Q 259 479 256 485 Q 253 479 247 476 Q 253 473 256 480 Z" />
+  </g>
+</svg>

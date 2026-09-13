@@ -1,0 +1,6 @@
+{
+  "name": "愛麗絲貓熊童話月曆",
+  "description": "貓熊打扮成愛麗絲童話風格的每月月曆，支援2026-2033年精準農曆、24節氣、台灣國定假日連假、特殊Emoji記號、手機行事曆匯出入、彩虹卡、東港鎮海宮靈籤、浪漫天使卡、好神卡與愛情解答之書。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
