@@ -142,10 +142,11 @@ export default function App() {
           {/* Logo & Fairytale Alice Panda Title */}
           <div className="flex items-center gap-2.5">
             <div className="relative w-11 h-11 rounded-2xl bg-gradient-to-br from-rose-100 to-amber-100 border-2 border-rose-300 flex items-center justify-center shadow-xs overflow-hidden">
-              <span className="text-2xl filter drop-shadow-xs" role="img" aria-label="Alice Panda">
-                🐼
-              </span>
-              <span className="absolute -bottom-1 -right-1 text-xs">🎀</span>
+              <img
+                src="/icon.svg"
+                alt="貓熊拿著魔法月曆"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <div className="flex items-center gap-2">

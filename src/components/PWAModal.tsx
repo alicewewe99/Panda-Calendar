@@ -138,13 +138,17 @@ export const PWAModal: React.FC<PWAModalProps> = ({ isOpen, onClose }) => {
       <div className="relative w-full max-w-lg rounded-2xl bg-[#fffdfa] border border-[#f0cfc5] shadow-2xl overflow-hidden max-h-[92vh] flex flex-col">
         {/* Fairy Tale Header */}
         <div className="bg-gradient-to-r from-rose-100 via-amber-50 to-pink-100 px-6 py-4 border-b border-[#f0cfc5] flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-full bg-white shadow-xs flex items-center justify-center border border-rose-200 text-xl">
-              🐼
+          <div className="flex items-center gap-2.5">
+            <div className="w-10 h-10 rounded-2xl bg-white shadow-xs flex items-center justify-center border border-rose-200 overflow-hidden">
+              <img
+                src="/icon.svg"
+                alt="貓熊拿著魔法月曆"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <h3 className="font-bold text-rose-950 text-base">PWA 手機下載與安裝</h3>
-              <p className="text-xs text-rose-700">下載到 iPhone / Android / 電腦桌面 App</p>
+              <p className="text-xs text-rose-700">桌面圖示：貓熊拿著魔法月曆 • 支援手機/電腦</p>
             </div>
           </div>
           <button
@@ -203,6 +207,11 @@ export const PWAModal: React.FC<PWAModalProps> = ({ isOpen, onClose }) => {
         <div className="p-6 overflow-y-auto flex-1">
           {activeTab === 'qrcode' && (
             <div className="flex flex-col items-center text-center">
+              <div className="flex items-center gap-2 mb-4 bg-rose-50/80 px-3 py-1.5 rounded-xl border border-rose-200">
+                <img src="/icon.svg" alt="貓熊拿著魔法月曆" className="w-6 h-6 rounded-lg shadow-2xs" />
+                <span className="text-xs text-rose-900 font-bold">桌面圖示：貓熊拿著魔法月曆</span>
+              </div>
+
               <div className="relative p-4 bg-white rounded-2xl border-2 border-rose-200 shadow-md">
                 {qrDataUrl ? (
                   <img
@@ -271,8 +280,9 @@ export const PWAModal: React.FC<PWAModalProps> = ({ isOpen, onClose }) => {
                   確認名稱為「愛麗絲貓熊童話月曆」，點選右上角 <span className="font-bold text-blue-600">「新增」</span>。
                 </li>
               </ol>
-              <div className="text-emerald-700 font-medium bg-emerald-50 p-3 rounded-lg border border-emerald-200">
-                🎉 完成後手機桌面上就會出現可愛的手繪貓熊日曆 App 圖示，點開就像原生應用程式一樣全螢幕使用，離線也能查看！
+              <div className="text-emerald-700 font-medium bg-emerald-50 p-3 rounded-lg border border-emerald-200 flex items-center gap-2">
+                <img src="/icon.svg" alt="貓熊拿著魔法月曆" className="w-8 h-8 rounded-xl shadow-xs shrink-0" />
+                <span>🎉 完成後手機桌面上就會出現「貓熊拿著魔法月曆」App 圖示，點開就像原生應用程式一樣全螢幕使用，離線也能查看！</span>
               </div>
             </div>
           )}
